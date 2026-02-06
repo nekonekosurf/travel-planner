@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "インドネシア横断 ジャカルタ→バリ島フェリー乗り場 10日間",
+    "country": "インドネシア",
+    "startCity": "ジャカルタ",
+    "endCity": "ケタパン港（バリ島行きフェリー）",
+    "totalDays": 10,
+    "currency": { "code": "IDR", "symbol": "Rp", "rateToJPY": 0.0094 },
+    "travelerProfile": {
+      "origin": "東京",
+      "firstVisit": true,
+      "preferences": ["自然", "海", "ビーチ", "ローカル食", "人が少ない場所"]
+    },
+    "lastUpdated": ""
+  },
+  "routeOverview": {
+    "summary": "",
+    "highlights": [],
+    "mapImageUrl": ""
+  },
+  "days": [],
+  "practicalInfo": {
+    "visa": { "description": "", "details": [] },
+    "currency": { "description": "", "tips": [] },
+    "sim": { "description": "", "carriers": [] },
+    "electricity": { "voltage": "", "plugType": "" },
+    "emergency": { "embassy": "", "police": "", "ambulance": "", "hospital": "" },
+    "packing": [],
+    "phrases": []
+  }
+}
