@@ -100,6 +100,16 @@ export default function DayDetail() {
         })
       }
     })
+    // City POIs (convenience stores, ATMs, cafes, etc.)
+    day.cityPois?.forEach((p) => {
+      pois.push({
+        name: p.name,
+        type: p.type,
+        lat: p.lat,
+        lng: p.lng,
+        detail: p.description,
+      })
+    })
     return pois
   }, [day])
 
@@ -160,6 +170,20 @@ export default function DayDetail() {
 
       <div className="px-4 py-4">
         <p className="text-sm text-gray-700 leading-relaxed">{day.summary}</p>
+
+        {dayNum === 1 && (
+          <Link
+            to="/airport"
+            className="mt-3 flex items-center gap-3 bg-ocean-50 border border-ocean-200 rounded-xl p-3"
+          >
+            <span className="w-10 h-10 bg-ocean-600 rounded-full flex items-center justify-center flex-shrink-0 text-white text-lg">✈</span>
+            <div className="flex-1">
+              <p className="text-sm font-bold text-ocean-800">空港→市内 移動ガイド</p>
+              <p className="text-xs text-gray-600">電車・バス・タクシーの比較、始発/終電、切符の買い方</p>
+            </div>
+            <span className="text-ocean-600 text-sm">&rarr;</span>
+          </Link>
+        )}
 
         {day.areaInfo && (
           <div className="mt-4 grid grid-cols-2 gap-2">
@@ -226,9 +250,12 @@ export default function DayDetail() {
               ))}
             </div>
             {mapPois.length > 0 && (
-              <div className="mt-1 flex gap-3 text-[10px] text-gray-500">
-                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-emerald-600 inline-block" />レストラン</span>
+              <div className="mt-1 flex flex-wrap gap-x-3 gap-y-1 text-[10px] text-gray-500">
+                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-emerald-600 inline-block" />食事</span>
                 <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-violet-600 inline-block" />宿泊</span>
+                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-blue-600 inline-block" />コンビニ</span>
+                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-cyan-600 inline-block" />ATM</span>
+                <span className="flex items-center gap-1"><span className="w-3 h-3 rounded-full bg-yellow-700 inline-block" />カフェ</span>
               </div>
             )}
           </>

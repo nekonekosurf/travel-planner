@@ -20,8 +20,8 @@ const numberIcon = (num) =>
   })
 
 const poiIcon = (type) => {
-  const colors = { restaurant: '#059669', hotel: '#7c3aed' }
-  const labels = { restaurant: '🍽', hotel: '🏨' }
+  const colors = { restaurant: '#059669', hotel: '#7c3aed', convenience: '#2563eb', atm: '#0891b2', cafe: '#a16207', mall: '#6d28d9', pharmacy: '#dc2626' }
+  const labels = { restaurant: '🍽', hotel: '🏨', convenience: '🏪', atm: '💳', cafe: '☕', mall: '🛍', pharmacy: '💊' }
   return L.divIcon({
     className: '',
     html: `<div style="background:${colors[type] || '#6b7280'};width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;border:2px solid white;box-shadow:0 2px 4px rgba(0,0,0,.3)">${labels[type] || '📍'}</div>`,

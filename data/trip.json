@@ -82,6 +82,15 @@
         "safety": "ジャカルタ空港〜駅は安全。バンドンも治安良好だが、夜間の路地は注意",
         "convenience": "空港内にAlfamart、バンドン駅周辺にIndomaretあり"
       },
+      "cityPois": [
+        { "name": "Indomaret Kebon Kawung", "lat": -6.9123, "lng": 107.6003, "type": "convenience", "description": "コンビニ（24h）。駅北口から徒歩3分" },
+        { "name": "ATM BCA 駅構内", "lat": -6.9127, "lng": 107.6019, "type": "atm", "description": "駅構内ATMセンター（BCA/Mandiri/BNI）" },
+        { "name": "Warung Nasi Ampera", "lat": -6.9124, "lng": 107.6012, "type": "restaurant", "description": "スンダ料理。24h営業。駅から徒歩2分" },
+        { "name": "Bakso Boedjangan Braga", "lat": -6.9171, "lng": 107.6088, "type": "restaurant", "description": "人気バクソチェーン。Braga City Walk内" },
+        { "name": "Braga Permai", "lat": -6.9174, "lng": 107.6095, "type": "restaurant", "description": "1918年創業の歴史的レストラン。Jl. Braga 58" },
+        { "name": "Kopi Toko Djawa", "lat": -6.9175, "lng": 107.6092, "type": "cafe", "description": "バンドン発の人気コーヒー店。Jl. Braga 81" },
+        { "name": "Braga City Walk", "lat": -6.9171, "lng": 107.6092, "type": "mall", "description": "モール・飲食街。Jl. Braga 99-101" }
+      ],
       "timeline": [
         {
           "time": "14:00",
@@ -365,6 +374,15 @@
         "safety": "観光地として整備されており安全。足元が滑りやすい箇所あり",
         "convenience": "チウィデイの街にIndomaretあり。カワプティ周辺は売店のみ"
       },
+      "cityPois": [
+        { "name": "Batagor Kingsley", "lat": -6.9190, "lng": 107.6154, "type": "restaurant", "description": "1979年創業の伝説的バタゴール。Jl. Veteran 25" },
+        { "name": "Kampung Daun", "lat": -6.8404, "lng": 107.6075, "type": "restaurant", "description": "山の中のスンダ料理レストラン。雰囲気抜群" },
+        { "name": "Warung Nasi Bu Eha", "lat": -6.9105, "lng": 107.6123, "type": "restaurant", "description": "ローカルワルン。安くて旨い。駅から徒歩5分" },
+        { "name": "Indomaret Dago 303", "lat": -6.8775, "lng": 107.6170, "type": "convenience", "description": "コンビニ（24h）。ATM BCA/Mandiri併設。Jl. Dago" },
+        { "name": "Starbucks Dipati Ukur", "lat": -6.8960, "lng": 107.6168, "type": "cafe", "description": "2階建て。Dago通りから徒歩5分。Jl. Dipati Ukur 42" },
+        { "name": "Kopi Toko Djawa", "lat": -6.9175, "lng": 107.6092, "type": "cafe", "description": "バンドン発の人気コーヒー店。Jl. Braga 81" },
+        { "name": "Braga Permai", "lat": -6.9174, "lng": 107.6095, "type": "restaurant", "description": "1918年創業。蘭印コロニアル建築。Jl. Braga 58" }
+      ],
       "timeline": [
         {
           "time": "07:00",
