@@ -1,4 +1,5 @@
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 import tripData from '../../data/trip.json'
 import HeroImage from '../components/HeroImage'
 import Timeline from '../components/Timeline'
@@ -8,8 +9,13 @@ import TransportInfo from '../components/TransportInfo'
 
 export default function DayDetail() {
   const { id } = useParams()
+  const { pathname } = useLocation()
   const dayNum = parseInt(id, 10)
   const day = tripData.days.find((d) => d.day === dayNum)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   if (!day) {
     return (
@@ -71,6 +77,18 @@ export default function DayDetail() {
               <div className="bg-sand-100 rounded-lg p-2">
                 <span className="text-xs text-gray-400 block">コンビニ</span>
                 <span className="text-xs font-medium">{day.areaInfo.convenience}</span>
+              </div>
+            )}
+            {day.areaInfo.transportNeeded && (
+              <div className="bg-sand-100 rounded-lg p-2">
+                <span className="text-xs text-gray-400 block">交通手段</span>
+                <span className="text-xs font-medium">{day.areaInfo.transportNeeded}</span>
+              </div>
+            )}
+            {day.areaInfo.wifi && (
+              <div className="bg-sand-100 rounded-lg p-2">
+                <span className="text-xs text-gray-400 block">WiFi/通信</span>
+                <span className="text-xs font-medium">{day.areaInfo.wifi}</span>
               </div>
             )}
           </div>

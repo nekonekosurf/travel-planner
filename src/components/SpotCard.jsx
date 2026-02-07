@@ -20,7 +20,7 @@ export default function SpotCard({ item, onClose }) {
             <p className="text-sm text-gray-700">
               {item.access.from}から {item.access.method}（{item.access.duration}）
             </p>
-            {item.access.cost && (
+            {item.access.cost && (item.access.cost.idr > 0 || item.access.cost.jpy > 0) && (
               <p className="text-sm font-medium text-gray-800 mt-1">
                 {item.access.cost.idr?.toLocaleString()} Rp（約{item.access.cost.jpy?.toLocaleString()}円）
               </p>

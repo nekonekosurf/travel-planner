@@ -20,16 +20,20 @@ export default function TransportInfo({ transport }) {
         </div>
 
         <div className="grid grid-cols-2 gap-2">
-          <div className="bg-white rounded-lg p-2">
-            <span className="text-xs text-gray-400 block">所要時間</span>
-            <span className="font-medium text-sm">{transport.duration}</span>
-          </div>
-          <div className="bg-white rounded-lg p-2">
-            <span className="text-xs text-gray-400 block">費用</span>
-            <span className="font-medium text-sm">
-              {transport.cost?.idr?.toLocaleString()} Rp（¥{transport.cost?.jpy?.toLocaleString()}）
-            </span>
-          </div>
+          {transport.duration && (
+            <div className="bg-white rounded-lg p-2">
+              <span className="text-xs text-gray-400 block">所要時間</span>
+              <span className="font-medium text-sm">{transport.duration}</span>
+            </div>
+          )}
+          {transport.cost && (transport.cost.idr > 0 || transport.cost.jpy > 0) && (
+            <div className="bg-white rounded-lg p-2">
+              <span className="text-xs text-gray-400 block">費用</span>
+              <span className="font-medium text-sm">
+                {transport.cost.idr?.toLocaleString()} Rp（¥{transport.cost.jpy?.toLocaleString()}）
+              </span>
+            </div>
+          )}
         </div>
 
         {transport.bookingInfo && (
