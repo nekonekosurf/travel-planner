@@ -5,6 +5,7 @@ import DayDetail from './pages/DayDetail'
 import Info from './pages/Info'
 import Food from './pages/Food'
 import AirportGuide from './pages/AirportGuide'
+import CityGuide from './pages/CityGuide'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/day/:id" element={<DayDetail />} />
           <Route path="/airport" element={<AirportGuide />} />
+          <Route path="/city/:name" element={<CityGuide />} />
           <Route path="/info" element={<Info />} />
           <Route path="/food" element={<Food />} />
         </Routes>

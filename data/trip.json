@@ -810,6 +810,74 @@
       }
     }
   ],
+  "cities": {
+    "jakarta": {
+      "name": "ジャカルタ（ガンビル駅周辺）",
+      "subtitle": "空港から列車でバンドンへ向かう中継地点",
+      "description": "ジャカルタはインドネシアの首都で人口1,000万人超の大都市。この旅ではバンドンへの中継地点として通過するが、ガンビル駅周辺にはコンビニ・ATM・薬局・飲食店が揃っており、列車の待ち時間を快適に過ごせる。駅から徒歩圏内にモナス（独立記念塔）もあり、時間があれば立ち寄りたい。",
+      "center": { "lat": -6.1767, "lng": 106.8303 },
+      "areaTips": [
+        "ガンビル駅構内にコンビニ・ATM・薬局あり。出なくても基本的な買い物はできる",
+        "駅から南に出ると飲食店が並ぶ。Bugis Kopitiamは駅1階で便利",
+        "モナス（独立記念塔）はガンビル駅から徒歩10分。乗り換え時間に余裕があれば外観だけでも",
+        "ジャカルタの渋滞は深刻。Grab移動は時間に余裕をもって",
+        "TransJakarta（BRT）のジュアンダ停留所がガンビル駅から徒歩10分。市内移動に便利"
+      ],
+      "landmarks": [
+        { "name": "ガンビル駅", "lat": -6.1767, "lng": 106.8303 },
+        { "name": "モナス（独立記念塔）", "lat": -6.1753, "lng": 106.8272 },
+        { "name": "BNI City駅（空港鉄道）", "lat": -6.2016, "lng": 106.8197 }
+      ],
+      "pois": [
+        { "name": "Indomaret ガンビル駅", "lat": -6.1758, "lng": 106.8304, "type": "convenience", "description": "駅構内コンビニ。飲み物・軽食・SIMカード。05:00-19:00", "googleMapsUrl": "https://maps.google.com/?q=-6.1758,106.8304" },
+        { "name": "ATM BCA ガンビル駅", "lat": -6.1768, "lng": 106.8305, "type": "atm", "description": "駅構内ATMセンター。BCA/Mandiri/BNI。24時間利用可", "googleMapsUrl": "https://maps.google.com/?q=-6.1768,106.8305" },
+        { "name": "キミア・ファルマ薬局", "lat": -6.1767, "lng": 106.8307, "type": "pharmacy", "description": "駅南口1階の薬局。常備薬・虫除け・マスク購入可", "googleMapsUrl": "https://maps.google.com/?q=-6.1767,106.8307" },
+        { "name": "Bugis Kopitiam ガンビル駅", "lat": -6.1765, "lng": 106.8304, "type": "restaurant", "description": "駅1階の東南アジア料理カフェ。ナシゴレン・ミーゴレンなど", "googleMapsUrl": "https://maps.google.com/?q=-6.1765,106.8304" },
+        { "name": "コピ・ケナンガン Wisma BNI 46", "lat": -6.2020, "lng": 106.8195, "type": "cafe", "description": "インドネシア発の人気コーヒーチェーン。BNI 46ビル内。平日07:00-20:00", "googleMapsUrl": "https://maps.google.com/?q=-6.2020,106.8195" },
+        { "name": "Indomaret Sudirman Park", "lat": -6.2025, "lng": 106.8189, "type": "convenience", "description": "BNI City駅から徒歩3分のコンビニ", "googleMapsUrl": "https://maps.google.com/?q=-6.2025,106.8189" },
+        { "name": "TransJakarta ジュアンダ停留所", "lat": -6.1711, "lng": 106.8261, "type": "transit", "description": "コリドー2・8のBRT停留所。ガンビル駅から徒歩10分", "googleMapsUrl": "https://maps.google.com/?q=-6.1711,106.8261" },
+        { "name": "ドゥクアタス BNI MRT駅", "lat": -6.2008, "lng": 106.8228, "type": "transit", "description": "南北線MRT駅。BNI City駅・LRT駅と接続する交通ハブ", "googleMapsUrl": "https://maps.google.com/?q=-6.2008,106.8228" }
+      ],
+      "relatedDays": [1],
+      "backLink": "/day/1",
+      "backLinkLabel": "Day 1に戻る"
+    },
+    "bandung": {
+      "name": "バンドン（駅〜ブラガ通り〜ダゴ通り）",
+      "subtitle": "標高768mの高原都市。グルメとカフェの街",
+      "description": "バンドンはジャワ島西部の高原都市で、オランダ植民地時代の建築が残るブラガ通りと、学生街のダゴ通りが二大エリア。スンダ料理のワルン（大衆食堂）、1918年創業のブラガ・ペルマイ、名物バタゴールなど、食の楽しみが尽きない。カフェ文化も盛んで、地元焙煎のコーヒーショップが多数。",
+      "center": { "lat": -6.9150, "lng": 107.6090 },
+      "areaTips": [
+        "ブラガ通り（Jl. Braga）は歩行者天国になることも。コロニアル建築のカフェ・レストランが並ぶ",
+        "ダゴ通り（Jl. Ir. H. Juanda）は大学エリア。若者向けカフェ・ファッション店が豊富",
+        "バンドン駅からブラガ通りまで徒歩15分、Grabなら5分（Rp10,000程度）",
+        "標高768mで涼しい（平均気温23℃）。ジャカルタより5-8℃低い。長袖を1枚持とう",
+        "週末はジャカルタからの観光客で渋滞する。移動は早めに"
+      ],
+      "landmarks": [
+        { "name": "バンドン駅", "lat": -6.9122, "lng": 107.6032 },
+        { "name": "ブラガ通り", "lat": -6.9174, "lng": 107.6092 },
+        { "name": "アジア・アフリカ会議記念博物館", "lat": -6.9215, "lng": 107.6096 }
+      ],
+      "pois": [
+        { "name": "Warung Nasi Ampera", "lat": -6.9124, "lng": 107.6012, "type": "restaurant", "description": "スンダ料理。24h営業。駅から徒歩2分", "googleMapsUrl": "https://maps.google.com/?q=-6.9124,107.6012" },
+        { "name": "Bakso Boedjangan Braga", "lat": -6.9171, "lng": 107.6088, "type": "restaurant", "description": "人気バクソチェーン。Braga City Walk内", "googleMapsUrl": "https://maps.google.com/?q=-6.9171,107.6088" },
+        { "name": "Braga Permai", "lat": -6.9174, "lng": 107.6095, "type": "restaurant", "description": "1918年創業の歴史的レストラン。Jl. Braga 58", "googleMapsUrl": "https://maps.google.com/?q=-6.9174,107.6095" },
+        { "name": "Batagor Kingsley", "lat": -6.9190, "lng": 107.6154, "type": "restaurant", "description": "1979年創業の伝説的バタゴール。Jl. Veteran 25", "googleMapsUrl": "https://maps.google.com/?q=-6.9190,107.6154" },
+        { "name": "Warung Nasi Bu Eha", "lat": -6.9105, "lng": 107.6123, "type": "restaurant", "description": "ローカルワルン。安くて旨い。駅から徒歩5分", "googleMapsUrl": "https://maps.google.com/?q=-6.9105,107.6123" },
+        { "name": "Kampung Daun", "lat": -6.8404, "lng": 107.6075, "type": "restaurant", "description": "山の中のスンダ料理レストラン。雰囲気抜群", "googleMapsUrl": "https://maps.google.com/?q=-6.8404,107.6075" },
+        { "name": "Kopi Toko Djawa", "lat": -6.9175, "lng": 107.6092, "type": "cafe", "description": "バンドン発の人気コーヒー店。Jl. Braga 81", "googleMapsUrl": "https://maps.google.com/?q=-6.9175,107.6092" },
+        { "name": "Starbucks Dipati Ukur", "lat": -6.8960, "lng": 107.6168, "type": "cafe", "description": "2階建て。Dago通りから徒歩5分。Jl. Dipati Ukur 42", "googleMapsUrl": "https://maps.google.com/?q=-6.8960,107.6168" },
+        { "name": "Indomaret Kebon Kawung", "lat": -6.9123, "lng": 107.6003, "type": "convenience", "description": "コンビニ（24h）。駅北口から徒歩3分", "googleMapsUrl": "https://maps.google.com/?q=-6.9123,107.6003" },
+        { "name": "Indomaret Dago 303", "lat": -6.8775, "lng": 107.6170, "type": "convenience", "description": "コンビニ（24h）。ATM BCA/Mandiri併設。Jl. Dago", "googleMapsUrl": "https://maps.google.com/?q=-6.8775,107.6170" },
+        { "name": "ATM BCA 駅構内", "lat": -6.9127, "lng": 107.6019, "type": "atm", "description": "駅構内ATMセンター（BCA/Mandiri/BNI）", "googleMapsUrl": "https://maps.google.com/?q=-6.9127,107.6019" },
+        { "name": "Braga City Walk", "lat": -6.9171, "lng": 107.6092, "type": "mall", "description": "モール・飲食街。Jl. Braga 99-101", "googleMapsUrl": "https://maps.google.com/?q=-6.9171,107.6092" }
+      ],
+      "relatedDays": [1, 2],
+      "backLink": "/day/1",
+      "backLinkLabel": "Day 1に戻る"
+    }
+  },
   "practicalInfo": {
     "visa": {
       "description": "VOA（Visa on Arrival/到着ビザ）で30日間の滞在が可能。延長も可能（1回のみ、+30日、Rp500,000）",

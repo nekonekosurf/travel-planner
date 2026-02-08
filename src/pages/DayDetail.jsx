@@ -120,6 +120,13 @@ export default function DayDetail() {
     )
   }, [dayNum])
 
+  const relatedCities = useMemo(() => {
+    if (!tripData.cities) return []
+    return Object.entries(tripData.cities)
+      .filter(([, city]) => city.relatedDays?.includes(dayNum))
+      .map(([key, city]) => ({ key, ...city }))
+  }, [dayNum])
+
   if (!day) {
     return (
       <div className="px-4 py-20 text-center">
@@ -183,6 +190,25 @@ export default function DayDetail() {
             </div>
             <span className="text-ocean-600 text-sm">&rarr;</span>
           </Link>
+        )}
+
+        {relatedCities.length > 0 && (
+          <div className="mt-3 space-y-2">
+            {relatedCities.map((city) => (
+              <Link
+                key={city.key}
+                to={`/city/${city.key}`}
+                className="flex items-center gap-3 bg-emerald-50 border border-emerald-200 rounded-xl p-3"
+              >
+                <span className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center flex-shrink-0 text-white text-lg">🏙</span>
+                <div className="flex-1">
+                  <p className="text-sm font-bold text-emerald-800">{city.name}</p>
+                  <p className="text-xs text-gray-600">{city.subtitle}</p>
+                </div>
+                <span className="text-emerald-600 text-sm">&rarr;</span>
+              </Link>
+            ))}
+          </div>
         )}
 
         {day.areaInfo && (
